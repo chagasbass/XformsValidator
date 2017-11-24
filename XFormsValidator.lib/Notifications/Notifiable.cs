@@ -16,6 +16,11 @@ namespace XFormsValidator.lib.Notifications
             _notifications.Add(new Notification(property, message));
         }
 
+        public void CleanNotification()
+        {
+            _notifications.Clear();
+        }
+
         public void AddNotification(Notification notification)
         {
             _notifications.Add(notification);
