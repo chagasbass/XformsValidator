@@ -85,7 +85,7 @@ namespace XFormsValidator.lib.Validations
             return IsEmail(email, property, message);
         }
 
-        public Contract IsUrl(string url, string property, string message)
+        public Contract IsUrl(string url, string property, string message) 
         {
             const string pattern = @"^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$";
             return Matchs(url, pattern, property, message);
