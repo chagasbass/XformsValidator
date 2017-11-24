@@ -11,6 +11,7 @@ namespace XFormsValidator.lib.Notifications
 
         public IReadOnlyCollection<Notification> Notifications { get { return _notifications; } }
 
+
         public void AddNotification(string property, string message)
         {
             _notifications.Add(new Notification(property, message));
