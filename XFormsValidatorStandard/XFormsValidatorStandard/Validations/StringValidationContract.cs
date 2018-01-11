@@ -12,6 +12,7 @@ namespace XFormsValidatorStandard.Validations
             return this;
         }
 
+
         public Contract IsNullOrEmpty(string val, string property, string message)
         {
             if (!string.IsNullOrEmpty(val))
